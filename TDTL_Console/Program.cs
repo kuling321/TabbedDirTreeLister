@@ -78,7 +78,7 @@ namespace TDTL
             //listBox1_.DataSource = Lines;
 
             saveToTxt(SourcePath);
-            Console.WriteLine($"List.txt generated into {SourcePath}");
+            Console.WriteLine($"List generated at {SourcePath}\\List.txt");
         }
 
         private static void saveToTxt(string dir)

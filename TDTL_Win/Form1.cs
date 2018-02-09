@@ -57,7 +57,7 @@ namespace WindowsFormsApp1
             listBox1_.DataSource = Lines;
 
             saveToTxt(SourcePath);
-            this.Text = $"List.txt generated into {SourcePath}";
+            this.Text = $"List generated at {SourcePath}\\List.txt";
         }
         private void txtFolderPath_DragDrop(object sender, DragEventArgs e)
         {
