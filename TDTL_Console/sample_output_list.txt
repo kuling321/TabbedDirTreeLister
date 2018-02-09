@@ -1,0 +1,57 @@
+JavaScript Interview Questions
+	list.txt
+	01 Introduction
+		001 Introduction - Very Important DO NOT SKIP.mp4
+		002 Contents.mp4
+		003 Interview Strategy.mp4
+	02 Types
+		004 What are the various types in Javascript.mp4
+		005 Is the type String same as an array of characters.mp4
+		006 What is the difference between undefined and null.mp4
+		007 What is NaN.mp4
+		008 How are Arrays in Javascript different than in Java or C.mp4
+		quizzes
+			001 Knowledge Quiz.html
+	03 Object Oriented JavaScript
+		009 Explains OOP and  the prototypical inheritance model..mp4
+		010 Explain call bind and apply..mp4
+		011 Why are functions in javascript known as first-class object.mp4
+		quizzes
+			002 Quiz.html
+	04 Coercion
+		012 Explain coercion.mp4
+		013 Whats the difference between  and.mp4
+		014 How would you convert a non-boolean value to boolean.mp4
+		quizzes
+			003 Quiz.html
+	05 Variable scoping scope chains closures and hoisting
+		015 What are scope chains and closures.mp4
+		016 Where and Why to use closures.mp4
+		017 Whats the difference between function expressions and function declarations.mp4
+		quizzes
+			004 Quiz.html
+	06 Promises
+		018 What is callback hell  Explain Promises..mp4
+		quizzes
+			005 Quiz.html
+	07 Event Loops
+		019 What are event loops.mp4
+	08 Error Handling in Javascript
+		020 What is use strict.mp4
+		021 What are the error handling methods in javascript.mp4
+		022 How do you perform testing in Javascript.mp4
+	09 Functional programming
+		023 What is functional programming.mp4
+		024 What is currying.mp4
+		025 What are the popular programming paradigms in Javascript.mp4
+	10 Miscellaneous
+		026 What is IIFE.mp4
+		027 Is Javascript compiled or Interpreted.mp4
+		028 Is there a goto statement in Javascript.mp4
+		029 What are polyfills.mp4
+		030 What is Node.js  Where would you use it and where should you not use it.mp4
+		031 Other Miscellaneous questions.mp4
+		quizzes
+			006 Quiz.html
+	11 End
+		032 The End.mp4
