@@ -14,7 +14,7 @@ namespace TDTL
 
         static void Main(string[] args)
         {
-            string msg1,msg2,msg3;
+            string msg1, msg2, msg3;
             msg1 = "Tabbed Directory Tree Lister\r\nversion: 1.0.0.0\r\ncontact developer at: kursatturkay@gmail.com";
             msg2 = "To Generate a tabbed list of a Directory, drop only a directory via Windows Explorer to this Executable.\r\nDropping a directory immidiately generates a hierarchical tabbed list right into root of same directory.\r\n";
             msg3 = "Press any key to close this console window.";
@@ -65,7 +65,6 @@ namespace TDTL
             }
         }
 
-
         private static void GenerateListAndSave()
         {
             Lines.Clear();
@@ -74,16 +73,14 @@ namespace TDTL
             Lines.Add(lastdirname);
 
             DirSearch(SourcePath, 1);
-            //listBox1_.DataSource = null;
-            //listBox1_.DataSource = Lines;
 
-            saveToTxt(SourcePath);
-            Console.WriteLine($"List generated at {SourcePath}\\List.txt");
+            saveToTxt(SourcePath,lastdirname);
+            Console.WriteLine($"List generated at {SourcePath}\\{lastdirname}.txt");
         }
 
-        private static void saveToTxt(string dir)
+        private static void saveToTxt(string dir,string filenameonly)
         {
-            TextWriter tw = new StreamWriter($"{dir}\\List.txt");
+            TextWriter tw = new StreamWriter($"{dir}\\{filenameonly}.txt");
             Lines.ForEach(x => { tw.WriteLine(x); });
             tw.Close();
         }

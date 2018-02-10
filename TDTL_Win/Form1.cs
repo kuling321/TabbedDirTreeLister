@@ -56,8 +56,8 @@ namespace WindowsFormsApp1
             listBox1_.DataSource = null;
             listBox1_.DataSource = Lines;
 
-            saveToTxt(SourcePath);
-            this.Text = $"List generated at {SourcePath}\\List.txt";
+            saveToTxt(SourcePath,lastdirname);
+            this.Text = $"List generated at {SourcePath}\\{lastdirname}.txt";
         }
         private void txtFolderPath_DragDrop(object sender, DragEventArgs e)
         {
@@ -75,9 +75,9 @@ namespace WindowsFormsApp1
 
 
 
-        private void saveToTxt(string dir)
+        private void saveToTxt(string dir, string filenameonly)
         {
-            TextWriter tw = new StreamWriter($"{dir}\\List.txt");
+            TextWriter tw = new StreamWriter($"{dir}\\{filenameonly}.txt");
             Lines.ForEach(x => { tw.WriteLine(x); });
             tw.Close();
         }
@@ -86,6 +86,28 @@ namespace WindowsFormsApp1
             e.Effect = (e.Data.GetDataPresent(DataFormats.FileDrop)) ? DragDropEffects.Copy : DragDropEffects.None;
         }
 
+
+        /*
+          private static void GenerateListAndSave()
+        {
+            Lines.Clear();
+
+            var lastdirname = SourcePath.Split(new[] { Path.DirectorySeparatorChar }, StringSplitOptions.RemoveEmptyEntries).Last();
+            Lines.Add(lastdirname);
+
+            DirSearch(SourcePath, 1);
+
+            saveToTxt(SourcePath,lastdirname);
+            Console.WriteLine($"List generated at {SourcePath}\\{lastdirname}.txt");
+        }
+
+        private static void saveToTxt(string dir,string filenameonly)
+        {
+            TextWriter tw = new StreamWriter($"{dir}\\{filenameonly}.txt");
+            Lines.ForEach(x => { tw.WriteLine(x); });
+            tw.Close();
+        }
+         */
 
     }
 }
