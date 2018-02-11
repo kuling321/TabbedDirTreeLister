@@ -31,6 +31,8 @@
             this.listBox1_ = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.checkBoxHideExtensions = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // listBox1_
@@ -40,9 +42,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.listBox1_.FormattingEnabled = true;
-            this.listBox1_.Location = new System.Drawing.Point(3, 46);
+            this.listBox1_.Location = new System.Drawing.Point(3, 72);
             this.listBox1_.Name = "listBox1_";
-            this.listBox1_.Size = new System.Drawing.Size(566, 251);
+            this.listBox1_.Size = new System.Drawing.Size(566, 225);
             this.listBox1_.TabIndex = 1;
             this.listBox1_.DragDrop += new System.Windows.Forms.DragEventHandler(this.txtFolderPath_DragDrop);
             this.listBox1_.DragEnter += new System.Windows.Forms.DragEventHandler(this.Form1_DragEnter);
@@ -74,12 +76,34 @@
             this.label2.Text = "Tabbed Directory Tree Lister\r\nversion : 1.0.0.0\r\ncontact developer at: kursatturk" +
     "ay@gmail.com";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(421, 47);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(148, 21);
+            this.comboBox1.TabIndex = 5;
+            // 
+            // checkBoxHideExtensions
+            // 
+            this.checkBoxHideExtensions.AutoSize = true;
+            this.checkBoxHideExtensions.Checked = true;
+            this.checkBoxHideExtensions.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBoxHideExtensions.Location = new System.Drawing.Point(313, 49);
+            this.checkBoxHideExtensions.Name = "checkBoxHideExtensions";
+            this.checkBoxHideExtensions.Size = new System.Drawing.Size(102, 17);
+            this.checkBoxHideExtensions.TabIndex = 6;
+            this.checkBoxHideExtensions.Text = "Hide Extensions";
+            this.checkBoxHideExtensions.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(576, 343);
+            this.Controls.Add(this.checkBoxHideExtensions);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listBox1_);
@@ -89,6 +113,7 @@
             this.DragDrop += new System.Windows.Forms.DragEventHandler(this.txtFolderPath_DragDrop);
             this.DragEnter += new System.Windows.Forms.DragEventHandler(this.Form1_DragEnter);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -96,6 +121,8 @@
         private System.Windows.Forms.ListBox listBox1_;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.CheckBox checkBoxHideExtensions;
     }
 }
 

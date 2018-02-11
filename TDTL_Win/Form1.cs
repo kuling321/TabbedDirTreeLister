@@ -14,22 +14,70 @@ namespace WindowsFormsApp1
     public partial class Form1 : Form
     {
         public string SourcePath = "";
+
+        public Dictionary<string, string> knownextensions = new Dictionary<string, string>()
+        {
+            { "Movies",".mp4;.wmv" },
+            { "All Files","*.*" }
+
+        };
+
+
         public Form1()
         {
             InitializeComponent();
+            comboBox1.DataSource = new BindingSource(knownextensions, null);
+            comboBox1.DisplayMember = "Key";
+            comboBox1.ValueMember = "Value";
+
         }
 
+        public string[] GetSelectedExtensionArray()
+        {
+            var s = (string)comboBox1.SelectedValue;
+
+            string[] ret = s.Split(';');
+
+            return ret;
+        }
         public List<String> Lines = new List<String>();
 
         private void DirSearch(string dir, int indent)
         {
             try
             {
-                foreach (string f in Directory.GetFiles(dir))
+                if (comboBox1.SelectedIndex == 1)
                 {
-                    var f_ = Path.GetFileName(f);
-                    Lines.Add(new String('\t', indent) + f_);
+                    var files = Directory.GetFiles(dir);
+                    foreach (var x in files)
+                    {
+                        var f_ =(!checkBoxHideExtensions.Checked) ?Path.GetFileName(x):Path.GetFileNameWithoutExtension(x);
+                        Lines.Add(new String('\t', indent) + f_);
+                    }
                 }
+                else
+                {
+                    var exts = GetSelectedExtensionArray();
+                    var files = new DirectoryInfo(dir).GetFilesByExtensions(exts);
+
+                    foreach (var x in files)
+                    {
+                        var f_ = (!checkBoxHideExtensions.Checked) ? Path.GetFileName(x.Name) :
+                                  Path.GetFileNameWithoutExtension(x.Name);
+
+                        //var f_ = Path.GetFileName(f);
+
+                        Lines.Add(new String('\t', indent) + f_);
+                    }
+                }
+
+
+
+                //foreach (string f in Directory.GetFiles(dir))
+                //{
+                //    var f_ = Path.GetFileName(f);
+                //    Lines.Add(new String('\t', indent) + f_);
+                //}
 
                 foreach (string d in Directory.GetDirectories(dir))
                 {
@@ -56,7 +104,7 @@ namespace WindowsFormsApp1
             listBox1_.DataSource = null;
             listBox1_.DataSource = Lines;
 
-            saveToTxt(SourcePath,lastdirname);
+            saveToTxt(SourcePath, lastdirname);
             this.Text = $"List generated at {SourcePath}\\{lastdirname}.txt";
         }
         private void txtFolderPath_DragDrop(object sender, DragEventArgs e)
