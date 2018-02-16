@@ -1,13 +1,14 @@
 # TabbedDirTreeLister
 Generates a Hierarchical Tabbed List of Dropped Directory and Saves as Text List into. Main Reason is Generate importable MindMaps to mindnode IOS app (This tool for Windows Desktop and Console)
 
-![Preview](./img1.PNG)
+![Preview1](./img1.PNG)
 
 
 as you drop a folder into form. you get a tabbed list file like image below:
-![](./img2.PNG)
+![Preview2](./img2.PNG)
 
 so you are able import that file as mindnode network to mindnode(IOS) or similar mindmap apps
+![Preview3](./img3.PNG)
 
 ---
 >## Authors
