@@ -17,8 +17,8 @@ namespace WindowsFormsApp1
 
         public Dictionary<string, string> knownextensions = new Dictionary<string, string>()
         {
-            { "Movies",".mp4;.wmv" },
-            { "All Files","*.*" }
+            { "Movies",".mp4;.wmv;.3gp;.m4v;.flv;.mov;.avi" },
+            { "All Files","*.*" },
 
         };
 
