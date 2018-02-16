@@ -5,7 +5,7 @@ Generates a Hierarchical Tabbed List of Dropped Directory and Saves as Text List
 
 
 as you drop a folder into form. you get a tabbed list file like image below:
-![](./img2.png)
+![Preview2](./img2.png)
 
 so you are able import that file as mindnode network to mindmap(IOS) or similar mindmap apps
 
