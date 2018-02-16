@@ -5,7 +5,7 @@ Generates a Hierarchical Tabbed List of Dropped Directory and Saves as Text List
 
 
 as you drop a folder into form. you get a tabbed list file like image below:
-![](./img2.png)
+![](./img2.PNG)
 
 so you are able import that file as mindnode network to mindnode(IOS) or similar mindmap apps
 
@@ -20,4 +20,4 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 >
 >## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](hhttps://github.com/kursatturkay/TabbedDirTreeLister/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
