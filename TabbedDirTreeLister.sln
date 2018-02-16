@@ -9,6 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDTL_Win", "TDTL_Win\TDTL_W
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3599C3AB-5ADC-4CEE-9FFF-3BCD02497ED9}"
 	ProjectSection(SolutionItems) = preProject
+		CONTRIBUTING.md = CONTRIBUTING.md
 		img1.PNG = img1.PNG
 		img2.PNG = img2.PNG
 		README.md = README.md
