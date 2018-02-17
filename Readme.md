@@ -19,7 +19,7 @@ so you are able import that file as mindnode network to mindnode(IOS) or similar
 
 >#### License
 
-This project is licensed under the Mozilla Public License Version 2.0 - see the [LICENSE.md](./LICENSE.MD) file for details
+This project is licensed under the Mozilla Public License Version 2.0 - see the [LICENSE.md](./LICENSE.md) file for details
 
 ---
 >
