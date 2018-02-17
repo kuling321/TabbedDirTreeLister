@@ -12,13 +12,18 @@ so you are able import that file as mindnode network to mindnode(IOS) or similar
 
 ---
 >## Authors
-  **Kursat Turkay** - Contributor(aka "**Archer**") [TabbedDirTreeLister](https://github.com/kursatturkay/TabbedDirTreeLister)
+>
+  **Kursat Turkay (aka "Archer")** - Contributor [TabbedDirTreeLister](https://github.com/kursatturkay/TabbedDirTreeLister)
 
+---
 
 >#### License
-This project is licensed under the MIT License - see the LICENSE.md file for details
 
+This project is licensed under the Mozilla Public License Version 2.0 - see the [LICENSE.md](./LICENSE.MD) file for details
+
+---
 >
 >## Contributing
+>
 
 Please read [CONTRIBUTING.md](https://github.com/kursatturkay/TabbedDirTreeLister/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
