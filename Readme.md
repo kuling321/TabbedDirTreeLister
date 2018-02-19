@@ -13,7 +13,7 @@ so you are able import that file as mindnode network to mindnode(IOS) or similar
 ---
 >## Authors
 >
-  **Kursat Turkay (aka "Archer")** - Contributor [TabbedDirTreeLister](https://github.com/kursatturkay/TabbedDirTreeLister)
+  **Kursat Turkay** - Contributor [TabbedDirTreeLister](https://github.com/kursatturkay/TabbedDirTreeLister)
 
 ---
 
